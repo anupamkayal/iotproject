@@ -1,2 +1,2 @@
-# iotproject.github.io
+# iotproject
 It is a website to control IoT system
