@@ -1,4 +1,4 @@
-// script.js
+
 const commandId="34633337"
 function updateTalkbackCommand(newValue) {
   
