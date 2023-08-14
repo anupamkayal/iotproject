@@ -29,7 +29,7 @@ const apiUrl = `https://api.thingspeak.com/channels/${channelID}/fields/${fieldN
 // Define another function that uses the latest values
 function light_on() {
   fetchButtonValues()
-    .then(buttonValue) => {
+    .then(buttonValue => {
       if (buttonValue !== null) {
         console.log(`Latest value in Field ${fieldNumber}: ${buttonValue}`);
         if (buttonValue == 0) {
@@ -97,7 +97,7 @@ function light_on() {
 
 function light_off() {
   fetchButtonValues()
-    .then(buttonValue) => {
+    .then(buttonValue => {
       if (buttonValue !== null) {
         console.log(`Latest value in Field ${fieldNumber}: ${buttonValue}`);
         if (buttonValue == 0) {
