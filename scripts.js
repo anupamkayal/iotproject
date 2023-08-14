@@ -187,6 +187,8 @@ function fatchServerData(){
 function onPageLoad() {
   fatchServerData().then(() => {
   // Ensure that the fetch has completed before using the values
+  console.log(`server value : ${serverValue}`);
+  console.log(` value : ${buttonState}`);
   if (serverValue !== null && buttonState !== null) {
     console.log(`Latest value in Field ${fieldNo}: ${serverValue}`);
     console.log(`Latest value in Field ${fieldNumber}: ${buttonState}`);
