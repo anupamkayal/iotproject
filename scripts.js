@@ -177,6 +177,7 @@ function fatchServerData(){
     buttonState = data2 && data2.length > 0 ? parseInt(data2[0].field2) : null;
     console.log(`server value : ${serverValue}`);
     console.log(` value : ${buttonState}`);
+    return Promise.resolve();
   })
   .catch(error => {
     console.error('Error fetching data:', error);
