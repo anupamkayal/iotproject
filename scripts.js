@@ -166,8 +166,8 @@ function light_off() {
 }
 
 function fatchServerData(){
-  const apiUrl1 = `https://api.thingspeak.com/channels/${channelID}/fields/${fieldNo}.json?results=1&api_key=${readAPIKey}`;
-  const apiUrl2 = `https://api.thingspeak.com/channels/${channelID}/fields/${fieldNumber}.json?results=1&api_key=${readAPIKey}`;
+  const apiUrl1 = `https://api.thingspeak.com/channels/2164453/fields/1.json?results=1&api_key=AUUB7CPMCTROMWTZ`;
+  const apiUrl2 = `https://api.thingspeak.com/channels/2164453/fields/2.json?results=1&api_key=AUUB7CPMCTROMWTZ`;
   return Promise.all([
     fetch(apiUrl1).then(response => response.json()),
     fetch(apiUrl2).then(response => response.json())
