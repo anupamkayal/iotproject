@@ -88,7 +88,7 @@ function light_on() {
       }
 
      
-    }
+    })
     .catch(error => {
       console.error('Error:', error);
     });
@@ -157,7 +157,7 @@ function light_off() {
       }
 
 
-    }
+    })
     .catch(error => {
       console.error('Error:', error);
     });
