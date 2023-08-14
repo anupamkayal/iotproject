@@ -3,7 +3,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Access-Control-Allow-Origin" content="*">
-		<script src="script.js"></script>
+		<script src="scripts.js"></script>
 		<title>NodeMCU ESP8266/ESP12E Control Relay & Light From Anywhere</title>
 		<style>
 			html {
@@ -105,19 +105,15 @@
             var onButton = document.getElementById('light-on');
             var offButton = document.getElementById('light-off');
 
-            if (state === 'on') {
-            	document.getElementById("LIGHTState").innerHTML = "ON";
-				document.getElementById("LightImage").src="on.png";
-                
+            if (state === 'on') {                
                 onButton.disabled = true;
                 offButton.disabled = false;
-                updateTalkbackCommand('T1');
-            } else {
-                document.getElementById("LIGHTState").innerHTML = "OFF";
-				document.getElementById("LightImage").src="off.png";
+                light_on();
+            } 
+	    else {
                 onButton.disabled = false;
                 offButton.disabled = true;
-                updateTalkbackCommand('T0');
+                light_off();
             }
         }
       
