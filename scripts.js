@@ -4,7 +4,7 @@ const readAPIKey = 'AUUB7CPMCTROMWTZ';
 const fieldNo = 1;
 const fieldNumber = 2;
 function fetchButtonValues() {
-https://api.thingspeak.com/channels/2164453/fields/1.json?results=1&api_key=AUUB7CPMCTROMWTZ
+//https://api.thingspeak.com/channels/2164453/fields/1.json?results=1&api_key=AUUB7CPMCTROMWTZ
 const apiUrl = `https://api.thingspeak.com/channels/${channelID}/fields/${fieldNumber}.json?results=1&api_key=${readAPIKey}`;
 
   return fetch(apiUrl)
